@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 /*--------------------------------------
          Header
 ---------------------------------------*/
@@ -65,4 +68,33 @@ header{
 .common-title:hover{
     transform: translate(-5px, -3px);
     text-shadow: 2px 5px 20px #00416d;
+}
+
+/*-------------------------------------
+     Gallery
+-------------------------------------*/
+.gallery-img{
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
+.gallery-img:hover{
+    transform: scale(1.05);
+}
+
+.first-row{
+    transform: translateX(-300px);
+    opacity:0;
+    transition: all 2.5s;
+}
+
+.second-row{
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.change .first-row, .change .second-row{
+    transform: translateX(0);
+    opacity: 1;
 }
