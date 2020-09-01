@@ -2,6 +2,107 @@ body{
     overflow-x: hidden;
     background-color: #f5f1da;
 }
+
+/*-------------------------------------
+      Navigation
+-------------------------------------*/
+.hamburger-menu{
+    width: 65px;
+    height: 65px;
+    background: #00416d;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 200;
+    border-radius: 50px;
+    outline: none!important;
+    transition: all .5s;
+}
+
+.change .hamburger-menu{
+    background: #f8bd7f;
+}
+
+.line1,
+.line2,
+.line3{
+    width: 30px;
+    height: 2px;
+    background: #f8bd7f;
+    margin: 5px;
+    transition: all .5s;
+}
+
+.bg-cover{
+    background: rgba(0,65,109,.97);
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    z-index: 100;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+@media(max-width: 990px){
+    .text-nav{
+        font-size: 2.5rem!important;
+    }
+    .text-heading{
+        font-size: 1.5rem!important;
+    }
+}
+
+.change .bg-cover{
+    transform: scale(150);
+}
+
+.change .line1{
+    transform: rotate(-405deg) translate(-5px, 5px);
+    background: #00416d;
+}
+
+.change .line2{
+    opacity:0;
+}
+
+.change .line3{
+    transform: rotate(405deg) translate(-5px, -5px);
+    background: #00416d;
+}
+
+.nav-content{
+    position: fixed;
+    z-index: 150;
+    width: 100%;
+}
+
+.text-nav{
+    color: #f8bd7f!important;
+}
+
+.stylish-heading{
+    font-family: 'Great Vibes', cursive;
+}
+
+.text-heading{
+    color: #f5f1da;
+}
+
+.link-item{
+    font-size: 20px;
+    color: #f8bd7f;
+    border-bottom: 1px solid #f8bd7f;
+}
+
+.link-item:hover{
+    color: #00416d;
+    border-bottom: 1px solid #f8bd7f;
+    border-radius: 50% 50% 0 0;
+    background: #e3dfc8;
+}
+
 /*--------------------------------------
          Header
 ---------------------------------------*/
@@ -9,6 +110,7 @@ header{
     height: 100vh;
     background: linear-gradient(rgba(245, 241, 218, .7), rgba(227, 223, 200, .8)), url(../img/lib.jpg) fixed center no-repeat;
     clip-path: polygon(0 0,100% 0, 100% 90%,0 100%);
+    background-size: cover;
 }
 
 .banner-heading:first-letter{

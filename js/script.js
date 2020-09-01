@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+   $('.hamburger-menu').click(function(){
+     $('.navigation').toggleClass('change')
+   })
+
     lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true

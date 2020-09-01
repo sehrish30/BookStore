@@ -26,17 +26,84 @@
 
 <body>
 
+     <!--Navigation bar-->
+     <nav class="navigation">
+         <button type="button" class="navbar-toggler hamburger-menu" data-toggle="collapse"
+         data-target="#myNavbar">
+             <div class="line1"></div>
+             <div class="line2"></div>
+             <div class="line3"></div>
+         </button>
+         <div class="bg-cover"></div>
+         <div class="collapse nav-content" id="myNavbar">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-10 mx-auto">
+                       <a href="#" class="navbar-brand mt-4 d-lg-none d-block">
+                           <img src="img/book.png" width="120">
+                       </a>
+                       <ul class="navbar-nav text-capitalize flex-lg-row flex-column nav-justified">
+                           <li class="nav-item">
+                               <a href="#" class="nav-link m-lg-3 m-1 link-item">Home</a>
+                           </li>
+                           <li class="nav-item">
+                            <a href="#" class="nav-link m-lg-3 m-1 link-item">About Us</a>
+                           </li>
+                           <li class="nav-item">
+                            <a href="#" class="nav-link m-lg-3 m-1 link-item">Library</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-lg-3 m-1 link-item">Deals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-lg-3 m-1 link-item">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-lg-3 m-1 link-item">Contact Us</a>
+                            </li>
+                       </ul>
+                   </div>
+                   <div class="col-lg-5 col-10 mx-auto">
+                       <form class="mt-3">
+                           <div class="input-group">
+                               <input type="text" class="form-control" placeholder="Search" aria-label="Search Books"> 
+                               <div class="input-group-append">
+                                   <button type="button" class="btn input-group-text">
+                                       <i class="fas fa-search"></i>
+                                   </button>
+                               </div>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           </div>
+           <div class="container">
+               <div class="row mt-5">
+                  <div class="col text-center">
+                      <h1 class="display-1 text-nav stylish-heading">Your Chance</h1>
+                      <h3 class="text-capitalize text-heading">Get each book for just 5 BHD</h3>
+                  </div>
+               </div>
+               <div class="row d-lg-block d-none">
+                   <div class="col text-center">
+                       <img src="img/books.png" width="550" alt="bookstore">
+                   </div>
+               </div>
+           </div>
+         </div>
+     </nav>
+
     <!--HEADER-->
     <header class="d-flex align-items-center">
         <div class="align-self-start position-absolute">
             <a href="#">
-                <img src="img/book.png" width="120" class="img-fluid m-4">
+                <img src="img/book.png" width="120" class="img-fluid mb-4">
             </a>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="display-1 font-italic mb-5 banner-heading">We <img src="img/heart.png" width="250px"
+                    <h1 class="display-1 font-italic mt-5 banner-heading">We <img src="img/heart.png" width="250px"
                             class="img-fluid" alt="">Reading</h1>
                     <a class="btn btn-lg btn-outline-danger text-uppercase px-5" href="#">Check Out</a>
                 </div>
@@ -359,10 +426,8 @@
             <div class="row">
                 <div class="col-xl-5 col-md-8 col-10 mx-auto">
                     <div class="row items-wrapper py-3 align-items-center">
-                        <div class="col-sm-5 col-8 floating-item first-item mx-auto mr-5 mx-auto my-4 p-2">
-                            <a href="#" class="text-light">
-                                <i class="fab fa-linkedin">Connect By Linkdein</i>
-                            </a>
+                        <div class="col-sm-5 col-8 floating-item first-item mr-5 mx-auto my-4 p-2">
+                            <a href="#" class="text-light"><i class="fab fa-linkedin">Connect By Linkedin</i></a>
                         </div>
                         <div class="col-sm-5 col-8 floating-item second-item mx-auto my-4 p-2">
                             <a href="#" class="text-light"><i class="fab fa-facebook">Share 50k</i></a>
