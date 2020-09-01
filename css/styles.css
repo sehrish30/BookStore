@@ -261,3 +261,88 @@ header{
     pointer-events: auto;
 }
 
+/*-------------------------------------
+      contact Section
+-------------------------------------*/
+
+.contact{
+    background-image: linear-gradient(to right, #e3dfc8 , #00416d);
+}
+
+.items-wrapper{
+    background: linear-gradient(rgba(245, 241, 218, .4), rgba(227, 223, 200, .5)), url(../img/items-wrapper-bg.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.floating-item{
+    background: #f8bd7f;
+    border-radius: 5px;
+}
+
+.text-light, .text-light:hover{
+    color: #00416d !important;
+}
+
+.first-item{
+    animation: float 15s infinite;
+}
+
+.second-item{
+    animation: float 20s ease-in infinite;
+}
+
+.third-item{
+    animation: float 40s linear infinite;
+}
+
+.fourth-item{
+    animation: float 30s infinite;
+}
+
+.fifth-item{
+    animation: float 25s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+      transform: translateX(0);  
+    }
+    50%{
+        transform: translateX(-60px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
+    background: transparent;
+    font-size: 1.2rem;
+    color: #00416d;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    background: #f5f1da ;
+    box-shadow: none;
+}
+
+.contact-heading{
+    font-family: 'Great Vibes', cursive;
+}
+
+/*-------------------------------------
+      Footer
+-------------------------------------*/
+.footer-heading{
+    color: #f8bd7f;
+    font-family: 'Great Vibes', cursive;
+}
+
+.footer-links, .footer-links:hover{
+    color: #fff;
+}
